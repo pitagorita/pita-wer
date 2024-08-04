@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#070F2B;
+    --color-secundario:#535C91;
+    --color-titulo:#3498db;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    /*height: 100vh*/
+    background-color: var(--color-primario);            
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    align-content: center;
+}
+
+.titulo {
+        background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);      
+        color: transparent;    
+        background-clip: text;
+        background-size: 500rem;
+        animation: titulo 3s linear infinite; 
+        font-size: 2.2rem;
+        text-align: center;
+        
+}
+
+@keyframes titulo {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+.presentacion {
+    display: flex;
+    padding: 1rem;
+    gap: 0.5rem 0.5rem;
+ }
+
+.presentacion_contenido{
+    width: 600rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.clase_presentacion_titulo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-krona);
+    color: var(--color-titulo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem 0.5rem;
+   
+}
+
+.presentacion_contenido_texto{
+    font-size: 1rem;
+    font-weight: 650;
+    font-family: var(--fuente-montserrat);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.4rem;
+}
+
+  
+.imagen {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+  .imagen:hover{opacity: 0.3;}
+  
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    
+}
+
+.presentacion_enlaces_subtitulos{
+    font-family: var(--fuente-krona);
+    font-size: 1.4rem;
+    
+}
+
+.presentacion_enlaces_link{
+    width: 15rem;
+    text-align: center;
+    padding: 0.6rem 0;
+    border-radius: 0.6rem;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #F6F6F6;
+    text-shadow: 1px 2px 2px #aaa;
+    border: 0.2rem outset var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.presentacion_enlaces_link:hover{
+    border: 0.4rem solid #ffde32;
+}
+
+.footer{
+    display: Flex;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    padding: 0.3rem ;
+    color: var(--color-primario);
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+    text-align: justify;
+    gap: 1rem;
+        
+}
+
+.header{
+    color: var(--color-secundario);
+    padding: 0.5rem 0rem 0rem 1rem;
+}
+
+.header_menu{
+    display: flex;
+    gap: 2.1rem;
+    
+}
+
+.header_menu_link{
+    font-size: 1rem;
+    font-weight: 550;
+    color: var(--color-secundario);
+    margin: 0 0.1rem;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+}
+
+.header_menu_link:hover {
+    background-color: #3498db;
+}
+
+.sobre_mi{
+    font-size: 3rem;
+    font-family: var(--fuente-krona);
+    color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+.sobre_mi_texto{
+    font-size: 1rem;
+    font-family: var(--fuente-montserrat);
+    display: flex;
+    flex-direction: column;
+    padding: 1.1rem;
+    color: #bbb;
+   }
+
+   .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 1024px){
+    .modal-content {
+      width: 100%;
+    }
+  }

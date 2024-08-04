@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    </head>
+<body>
+    <header class="header">
+        <nav class="header_menu">
+            <a class="header_menu_link" href="index.html">Home</a>
+            <a class="header_menu_link" href="about.html">Sobre mi</a>
+            <a class="header_menu_link" href="curriculum.html">Curriculum</a>
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion_contenido">
+        <h1 class="clase_presentacion_titulo">
+            <strong class="titulo"> Mi primera pagina 
+                Wer</strong></h1>
+            <p class="presentacion_contenido_texto">
+                ¡Hola! Soy Pablo, un niño aburrido 
+                que queria aprender HTML, pero que nunca tiene ganas
+                de hacer nada.
+            </p>
+                <img id="myImg" class="imagen" src="./assets/pudu.jpg" alt="Un pudú chiquito">
+
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+
+            <div class="presentacion_enlaces">
+                <h2 class="presentacion_enlaces_subtitulos">
+                    Accede a mis redes
+                </h2>
+            <a class="presentacion_enlaces_link" href="https://www.instagram.com/pitagorita">
+                <img src="./assets/instagram.png">
+            Instagram</a>
+            <a class="presentacion_enlaces_link" href="https://github.com/pitagorita">
+                <img src="./assets/github.png">
+                GitHub</a>
+            </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por mi</p>
+    </footer>
+   <!-- <script>
+        // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Add an event listener to the image to show the modal
+img.addEventListener('click', function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+});
+
+// Get the close button
+var span = document.getElementsByClassName("close")[0];
+
+// Add an event listener to the close button to hide the modal
+span.addEventListener('click', function() {
+  modal.style.display = "none";
+});
+        </script> -->
+
+<script src="zoom.js"></script>
+</body>
+</html>
