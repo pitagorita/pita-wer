@@ -1,6 +1,6 @@
-<H1> Sistema de registro<H1>
+<H1>Mi Primera pagina web<H1>
 
 -En construccion
 ................................
 
--Sistema de Registro 2
+
